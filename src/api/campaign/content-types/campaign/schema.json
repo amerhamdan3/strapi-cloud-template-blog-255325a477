@@ -11,8 +11,76 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
     "title": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "daysLeft": {
+      "type": "integer"
+    },
+    "headerCards": {
+      "type": "component",
+      "component": "campaign.header-card",
+      "repeatable": true
+    },
+    "goal": {
+      "type": "integer"
+    },
+    "raised": {
+      "type": "integer"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonColor": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "ongoing",
+        "disabled"
+      ]
+    },
+    "donateUrl": {
+      "type": "string"
+    },
+    "longDescription": {
+      "type": "richtext"
+    },
+    "improvements": {
+      "type": "component",
+      "component": "campaign.cards-section",
+      "repeatable": false
+    },
+    "bottomSection": {
+      "type": "component",
+      "component": "campaign.campaign",
+      "repeatable": false
+    },
+    "gallery": {
+      "type": "component",
+      "component": "campaign.gallery",
+      "repeatable": false
+    },
+    "order": {
+      "type": "integer"
     }
   }
 }

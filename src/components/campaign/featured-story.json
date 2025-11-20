@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_campaign_featured_stories",
+  "info": {
+    "displayName": "Featured Story",
+    "icon": "handHeart"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "card": {
+      "type": "component",
+      "component": "campaign.icon-card",
+      "repeatable": false
+    },
+    "badges": {
+      "type": "component",
+      "component": "shared.text-list",
+      "repeatable": true
+    },
+    "youtubeVideoCode": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

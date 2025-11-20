@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_campaign_galleries",
+  "info": {
+    "displayName": "Gallery",
+    "icon": "brush"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "images": {
+      "type": "component",
+      "component": "shared.image-with-text",
+      "repeatable": true
+    },
+    "videos": {
+      "type": "component",
+      "component": "shared.youtube-video",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

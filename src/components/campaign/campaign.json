@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_campaign_campaigns",
+  "info": {
+    "displayName": "Bottom Section",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "text": {
+      "type": "text"
+    },
+    "list": {
+      "type": "component",
+      "component": "shared.text-list",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

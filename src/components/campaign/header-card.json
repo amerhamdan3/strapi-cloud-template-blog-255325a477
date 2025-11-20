@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_campaign_header_cards",
+  "info": {
+    "displayName": "header card",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

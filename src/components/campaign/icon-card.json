@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_campaign_icon_cards",
+  "info": {
+    "displayName": "icon card",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "style": {
+      "type": "enumeration",
+      "required": false,
+      "default": "bubble",
+      "enum": [
+        "bubble",
+        "border"
+      ]
+    }
+  },
+  "config": {}
+}

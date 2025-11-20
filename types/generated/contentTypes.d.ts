@@ -542,17 +542,33 @@ export interface ApiCampaignCampaign extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    bottomSection: Schema.Attribute.Component<'campaign.campaign', false>;
+    buttonColor: Schema.Attribute.String;
+    buttonText: Schema.Attribute.String;
+    coverImage: Schema.Attribute.Media<'images' | 'files'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    daysLeft: Schema.Attribute.Integer;
+    description: Schema.Attribute.Text;
+    donateUrl: Schema.Attribute.String;
+    gallery: Schema.Attribute.Component<'campaign.gallery', false>;
+    goal: Schema.Attribute.Integer;
+    headerCards: Schema.Attribute.Component<'campaign.header-card', true>;
+    improvements: Schema.Attribute.Component<'campaign.cards-section', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::campaign.campaign'
     > &
       Schema.Attribute.Private;
+    longDescription: Schema.Attribute.RichText;
+    order: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
+    raised: Schema.Attribute.Integer;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     title: Schema.Attribute.String;
+    type: Schema.Attribute.Enumeration<['active', 'ongoing', 'disabled']>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_campaign_cards_sections",
+  "info": {
+    "displayName": "Cards Section",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "component": "campaign.icon-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
