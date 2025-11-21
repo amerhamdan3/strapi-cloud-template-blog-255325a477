@@ -27,6 +27,19 @@ export interface CampaignCardsSection extends Struct.ComponentSchema {
   };
 }
 
+export interface CampaignFaQs extends Struct.ComponentSchema {
+  collectionName: 'components_campaign_fa_qs';
+  info: {
+    displayName: 'FAQs';
+    icon: 'check';
+  };
+  attributes: {
+    faq: Schema.Attribute.Component<'shared.faq', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface CampaignFeaturedStory extends Struct.ComponentSchema {
   collectionName: 'components_campaign_featured_stories';
   info: {
@@ -84,6 +97,31 @@ export interface CampaignIconCard extends Struct.ComponentSchema {
   };
 }
 
+export interface CampaignImpactLevel extends Struct.ComponentSchema {
+  collectionName: 'components_campaign_impact_levels';
+  info: {
+    displayName: 'Impact Level';
+    icon: 'star';
+  };
+  attributes: {
+    options: Schema.Attribute.Component<'shared.payment-card', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFaq extends Struct.ComponentSchema {
+  collectionName: 'components_shared_faqs';
+  info: {
+    displayName: 'faq';
+    icon: 'hashtag';
+  };
+  attributes: {
+    answer: Schema.Attribute.Text;
+    question: Schema.Attribute.String;
+  };
+}
+
 export interface SharedImageWithText extends Struct.ComponentSchema {
   collectionName: 'components_shared_image_with_texts';
   info: {
@@ -104,6 +142,20 @@ export interface SharedMedia extends Struct.ComponentSchema {
   };
   attributes: {
     file: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
+  };
+}
+
+export interface SharedPaymentCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_payment_cards';
+  info: {
+    displayName: 'paymentCard';
+  };
+  attributes: {
+    amount: Schema.Attribute.Integer;
+    buttonText: Schema.Attribute.String;
+    popular: Schema.Attribute.Boolean;
+    subtitle: Schema.Attribute.String;
+    url: Schema.Attribute.String;
   };
 }
 
@@ -186,12 +238,16 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'campaign.campaign': CampaignCampaign;
       'campaign.cards-section': CampaignCardsSection;
+      'campaign.fa-qs': CampaignFaQs;
       'campaign.featured-story': CampaignFeaturedStory;
       'campaign.gallery': CampaignGallery;
       'campaign.header-card': CampaignHeaderCard;
       'campaign.icon-card': CampaignIconCard;
+      'campaign.impact-level': CampaignImpactLevel;
+      'shared.faq': SharedFaq;
       'shared.image-with-text': SharedImageWithText;
       'shared.media': SharedMedia;
+      'shared.payment-card': SharedPaymentCard;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;

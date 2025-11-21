@@ -552,9 +552,12 @@ export interface ApiCampaignCampaign extends Struct.CollectionTypeSchema {
     daysLeft: Schema.Attribute.Integer;
     description: Schema.Attribute.Text;
     donateUrl: Schema.Attribute.String;
+    faqs: Schema.Attribute.Component<'campaign.fa-qs', false>;
+    featuredStory: Schema.Attribute.Component<'campaign.featured-story', false>;
     gallery: Schema.Attribute.Component<'campaign.gallery', false>;
     goal: Schema.Attribute.Integer;
     headerCards: Schema.Attribute.Component<'campaign.header-card', true>;
+    impact: Schema.Attribute.Component<'campaign.impact-level', false>;
     improvements: Schema.Attribute.Component<'campaign.cards-section', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<

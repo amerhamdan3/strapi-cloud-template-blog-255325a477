@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_payment_cards",
+  "info": {
+    "displayName": "paymentCard"
+  },
+  "options": {},
+  "attributes": {
+    "amount": {
+      "type": "integer"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "popular": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

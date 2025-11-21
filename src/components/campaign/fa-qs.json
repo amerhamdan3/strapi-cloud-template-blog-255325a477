@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_campaign_fa_qs",
+  "info": {
+    "displayName": "FAQs",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "faq": {
+      "type": "component",
+      "component": "shared.faq",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

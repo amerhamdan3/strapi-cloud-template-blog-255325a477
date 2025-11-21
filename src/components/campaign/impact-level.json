@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_campaign_impact_levels",
+  "info": {
+    "displayName": "Impact Level",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "options": {
+      "type": "component",
+      "component": "shared.payment-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

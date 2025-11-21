@@ -64,19 +64,34 @@
     "longDescription": {
       "type": "richtext"
     },
+    "featuredStory": {
+      "type": "component",
+      "component": "campaign.featured-story",
+      "repeatable": false
+    },
     "improvements": {
       "type": "component",
       "component": "campaign.cards-section",
       "repeatable": false
     },
-    "bottomSection": {
-      "type": "component",
-      "component": "campaign.campaign",
-      "repeatable": false
-    },
     "gallery": {
       "type": "component",
       "component": "campaign.gallery",
+      "repeatable": false
+    },
+    "impact": {
+      "type": "component",
+      "component": "campaign.impact-level",
+      "repeatable": false
+    },
+    "faqs": {
+      "type": "component",
+      "component": "campaign.fa-qs",
+      "repeatable": false
+    },
+    "bottomSection": {
+      "type": "component",
+      "component": "campaign.campaign",
       "repeatable": false
     },
     "order": {
