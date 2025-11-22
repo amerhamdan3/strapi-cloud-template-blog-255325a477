@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_regions_title_with_cards",
+  "info": {
+    "displayName": "titleWithCards",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "component": "shared.title-subtitle",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

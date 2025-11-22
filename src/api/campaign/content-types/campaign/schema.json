@@ -61,8 +61,10 @@
     "donateUrl": {
       "type": "string"
     },
-    "longDescription": {
-      "type": "richtext"
+    "campaignStory": {
+      "type": "component",
+      "component": "campaign.story",
+      "repeatable": false
     },
     "featuredStory": {
       "type": "component",

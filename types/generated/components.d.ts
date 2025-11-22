@@ -110,6 +110,74 @@ export interface CampaignImpactLevel extends Struct.ComponentSchema {
   };
 }
 
+export interface CampaignStory extends Struct.ComponentSchema {
+  collectionName: 'components_campaign_stories';
+  info: {
+    displayName: 'Story';
+    icon: 'feather';
+  };
+  attributes: {
+    badge: Schema.Attribute.String;
+    button: Schema.Attribute.String;
+    description: Schema.Attribute.RichText;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface RegionsImageSection extends Struct.ComponentSchema {
+  collectionName: 'components_regions_image_sections';
+  info: {
+    displayName: 'imageSection';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    text: Schema.Attribute.RichText;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface RegionsMultiImageSection extends Struct.ComponentSchema {
+  collectionName: 'components_regions_multi_image_sections';
+  info: {
+    displayName: 'multiImageSection';
+    icon: 'command';
+  };
+  attributes: {
+    rightImages: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    text: Schema.Attribute.RichText;
+    title: Schema.Attribute.String;
+    underText: Schema.Attribute.Media<'images'>;
+  };
+}
+
+export interface RegionsTitleWithCards extends Struct.ComponentSchema {
+  collectionName: 'components_regions_title_with_cards';
+  info: {
+    displayName: 'titleWithCards';
+    icon: 'apps';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'shared.title-subtitle', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface RegionsVideos extends Struct.ComponentSchema {
+  collectionName: 'components_regions_videos';
+  info: {
+    displayName: 'Videos';
+    icon: 'headphone';
+  };
+  attributes: {
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    videos: Schema.Attribute.Component<'shared.youtube-video', true>;
+  };
+}
+
 export interface SharedFaq extends Struct.ComponentSchema {
   collectionName: 'components_shared_faqs';
   info: {
@@ -210,6 +278,20 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSourceCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_source_cards';
+  info: {
+    displayName: 'sourceCard';
+    icon: 'link';
+  };
+  attributes: {
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+    url: Schema.Attribute.String;
+    urlText: Schema.Attribute.String;
+  };
+}
+
 export interface SharedTextList extends Struct.ComponentSchema {
   collectionName: 'components_shared_text_lists';
   info: {
@@ -221,6 +303,18 @@ export interface SharedTextList extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedTitleSubtitle extends Struct.ComponentSchema {
+  collectionName: 'components_shared_title_subtitles';
+  info: {
+    displayName: 'titleSubtitle';
+    icon: 'server';
+  };
+  attributes: {
+    subtitle: Schema.Attribute.RichText;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedYoutubeVideo extends Struct.ComponentSchema {
   collectionName: 'components_shared_youtube_videos';
   info: {
@@ -228,6 +322,7 @@ export interface SharedYoutubeVideo extends Struct.ComponentSchema {
     icon: 'television';
   };
   attributes: {
+    subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
     videoCode: Schema.Attribute.String;
   };
@@ -244,6 +339,11 @@ declare module '@strapi/strapi' {
       'campaign.header-card': CampaignHeaderCard;
       'campaign.icon-card': CampaignIconCard;
       'campaign.impact-level': CampaignImpactLevel;
+      'campaign.story': CampaignStory;
+      'regions.image-section': RegionsImageSection;
+      'regions.multi-image-section': RegionsMultiImageSection;
+      'regions.title-with-cards': RegionsTitleWithCards;
+      'regions.videos': RegionsVideos;
       'shared.faq': SharedFaq;
       'shared.image-with-text': SharedImageWithText;
       'shared.media': SharedMedia;
@@ -252,7 +352,9 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.source-card': SharedSourceCard;
       'shared.text-list': SharedTextList;
+      'shared.title-subtitle': SharedTitleSubtitle;
       'shared.youtube-video': SharedYoutubeVideo;
     }
   }

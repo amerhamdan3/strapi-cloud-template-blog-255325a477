@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_source_cards",
+  "info": {
+    "displayName": "sourceCard",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "urlText": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

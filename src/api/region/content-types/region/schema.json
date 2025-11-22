@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "regions",
+  "info": {
+    "singularName": "region",
+    "pluralName": "regions",
+    "displayName": "Region"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "numbers": {
+      "type": "component",
+      "component": "shared.source-card",
+      "repeatable": true
+    },
+    "section1": {
+      "type": "component",
+      "component": "shared.title-subtitle",
+      "repeatable": false
+    },
+    "impact": {
+      "type": "component",
+      "component": "regions.image-section",
+      "repeatable": false
+    },
+    "projectDetails": {
+      "type": "component",
+      "component": "regions.multi-image-section",
+      "repeatable": false
+    },
+    "cards": {
+      "type": "component",
+      "component": "regions.title-with-cards",
+      "repeatable": false
+    },
+    "whatsNext": {
+      "type": "component",
+      "component": "shared.title-subtitle",
+      "repeatable": false
+    },
+    "getInvolved": {
+      "type": "component",
+      "component": "shared.title-subtitle",
+      "repeatable": false
+    },
+    "featuredVideos": {
+      "type": "component",
+      "component": "regions.videos",
+      "repeatable": false
+    }
+  }
+}

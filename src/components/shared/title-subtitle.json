@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_title_subtitles",
+  "info": {
+    "displayName": "titleSubtitle",
+    "icon": "server"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

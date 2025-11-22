@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_regions_videos",
+  "info": {
+    "displayName": "Videos",
+    "icon": "headphone"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "videos": {
+      "type": "component",
+      "component": "shared.youtube-video",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
