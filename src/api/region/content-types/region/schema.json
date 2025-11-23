@@ -21,6 +21,14 @@
       "type": "uid",
       "targetField": "title"
     },
+    "cardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
     "cover": {
       "type": "media",
       "multiple": false,

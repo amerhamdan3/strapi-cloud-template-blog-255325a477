@@ -549,6 +549,7 @@ export interface ApiRegionRegion extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    cardImage: Schema.Attribute.Media<'images'>;
     cards: Schema.Attribute.Component<'regions.title-with-cards', false>;
     cover: Schema.Attribute.Media<'images'>;
     createdAt: Schema.Attribute.DateTime;
