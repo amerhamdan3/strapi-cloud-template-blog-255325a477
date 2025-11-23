@@ -6,8 +6,12 @@ export default {
                 "Auth.form.welcome.subtitle": "Login into MFA account",
             },
         },
+        head: {
+            favicon: '/favicon.ico',
+        }
     },
     bootstrap(app) {
+        document.title = 'MFA CMS Admin';
         console.log(app);
     },
 };
