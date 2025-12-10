@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_about_history_cards",
+  "info": {
+    "displayName": "historyCard",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -13,19 +13,10 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "color": {
       "type": "string"
-    },
-    "style": {
-      "type": "enumeration",
-      "required": false,
-      "default": "bubble",
-      "enum": [
-        "bubble",
-        "border"
-      ]
     }
   },
   "config": {}

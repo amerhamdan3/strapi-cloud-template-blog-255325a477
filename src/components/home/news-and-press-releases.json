@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_news_and_press_releases",
+  "info": {
+    "displayName": "News & Press Releases",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "news": {
+      "type": "component",
+      "component": "home.news-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

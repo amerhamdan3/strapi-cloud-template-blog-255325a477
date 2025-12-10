@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_histories",
+  "info": {
+    "displayName": "history",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "timeline": {
+      "type": "component",
+      "component": "about.history-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

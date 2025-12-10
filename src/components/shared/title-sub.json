@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_title_subs",
+  "info": {
+    "displayName": "titleSub",
+    "icon": "hashtag"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

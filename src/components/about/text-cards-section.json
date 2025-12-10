@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_text_cards_sections",
+  "info": {
+    "displayName": "textCardsSection",
+    "icon": "collapse"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "boardCard": {
+      "type": "component",
+      "component": "shared.single-title",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

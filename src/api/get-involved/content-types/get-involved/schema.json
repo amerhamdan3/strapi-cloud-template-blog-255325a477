@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "get_involveds",
+  "info": {
+    "singularName": "get-involved",
+    "pluralName": "get-involveds",
+    "displayName": "Get Involved"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "component": "shared.image-click-card",
+      "repeatable": true
+    }
+  }
+}

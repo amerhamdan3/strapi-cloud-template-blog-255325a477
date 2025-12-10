@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "become_a_partners",
+  "info": {
+    "singularName": "become-a-partner",
+    "pluralName": "become-a-partners",
+    "displayName": "Become a Partner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "main": {
+      "type": "richtext"
+    },
+    "cards": {
+      "type": "component",
+      "component": "campaign.icon-card",
+      "repeatable": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "shared.cta",
+      "repeatable": true
+    }
+  }
+}

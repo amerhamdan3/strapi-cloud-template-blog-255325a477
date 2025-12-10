@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_image_click_cards",
+  "info": {
+    "displayName": "ImageClickCard",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "tilte": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "button": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
