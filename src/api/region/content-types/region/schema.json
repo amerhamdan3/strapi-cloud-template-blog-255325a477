@@ -139,6 +139,22 @@
       },
       "component": "regions.videos",
       "repeatable": false
+    },
+    "cardButtonText": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "cardButtonColor": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
