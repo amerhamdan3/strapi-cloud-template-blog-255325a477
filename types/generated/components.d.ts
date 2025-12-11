@@ -306,6 +306,19 @@ export interface SharedButton extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCardImageTitleSub extends Struct.ComponentSchema {
+  collectionName: 'components_shared_card_image_title_subs';
+  info: {
+    displayName: 'cardImageTitleSub';
+    icon: 'command';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'>;
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedCta extends Struct.ComponentSchema {
   collectionName: 'components_shared_ctas';
   info: {
@@ -548,6 +561,7 @@ declare module '@strapi/strapi' {
       'regions.title-with-cards': RegionsTitleWithCards;
       'regions.videos': RegionsVideos;
       'shared.button': SharedButton;
+      'shared.card-image-title-sub': SharedCardImageTitleSub;
       'shared.cta': SharedCta;
       'shared.faq': SharedFaq;
       'shared.image-click-card': SharedImageClickCard;

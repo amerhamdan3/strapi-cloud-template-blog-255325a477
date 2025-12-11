@@ -1075,6 +1075,49 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiPastProjectPastProject extends Struct.SingleTypeSchema {
+  collectionName: 'past_projects';
+  info: {
+    displayName: 'Past Project';
+    pluralName: 'past-projects';
+    singularName: 'past-project';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::past-project.past-project'
+    >;
+    projects: Schema.Attribute.Component<'shared.card-image-title-sub', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiRegionRegion extends Struct.CollectionTypeSchema {
   collectionName: 'regions';
   info: {
@@ -1856,6 +1899,7 @@ declare module '@strapi/strapi' {
       'api::get-involved.get-involved': ApiGetInvolvedGetInvolved;
       'api::global.global': ApiGlobalGlobal;
       'api::home.home': ApiHomeHome;
+      'api::past-project.past-project': ApiPastProjectPastProject;
       'api::region.region': ApiRegionRegion;
       'api::report.report': ApiReportReport;
       'api::us-advocacy.us-advocacy': ApiUsAdvocacyUsAdvocacy;
