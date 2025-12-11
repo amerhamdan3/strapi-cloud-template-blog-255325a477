@@ -27,18 +27,6 @@
         "audios"
       ]
     },
-    "facebook": {
-      "type": "string"
-    },
-    "x": {
-      "type": "string"
-    },
-    "instagram": {
-      "type": "string"
-    },
-    "youtube": {
-      "type": "string"
-    },
     "rights": {
       "type": "text"
     }
