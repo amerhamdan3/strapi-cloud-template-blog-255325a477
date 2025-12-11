@@ -341,6 +341,7 @@ export interface SharedImageClickCard extends Struct.ComponentSchema {
   attributes: {
     button: Schema.Attribute.Component<'shared.button', false>;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    subtitle: Schema.Attribute.Text;
     tilte: Schema.Attribute.String;
   };
 }
