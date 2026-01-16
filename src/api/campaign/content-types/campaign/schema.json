@@ -198,6 +198,14 @@
           "localized": true
         }
       }
+    },
+    "NeonCampaignID": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }

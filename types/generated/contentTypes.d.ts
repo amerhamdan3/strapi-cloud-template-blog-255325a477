@@ -680,6 +680,12 @@ export interface ApiCampaignCampaign extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::campaign.campaign'
     >;
+    NeonCampaignID: Schema.Attribute.Integer &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     order: Schema.Attribute.Integer &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
