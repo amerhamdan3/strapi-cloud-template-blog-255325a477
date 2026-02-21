@@ -707,7 +707,7 @@ export interface ApiCampaignCampaign extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
-    type: Schema.Attribute.Enumeration<['active', 'ongoing', 'disabled']> &
+    type: Schema.Attribute.Enumeration<['active', 'completed', 'disabled']> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
